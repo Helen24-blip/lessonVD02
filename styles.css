@@ -1,0 +1,45 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Стили карточек */
+.card {
+    background-color: #E0FFFF;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Стили для фото */
+ .profile-photo {
+    width: 150px; /* Фиксированная ширина */
+    height: 150px; /* Фиксированная высота */
+    border-radius: 40%; /* Скругленные края, если нужно */
+    object-fit: cover; /* Сохранение пропорций и заполнение контейнера */
+    border: 2px solid #ccc; /* Рамка */
+    margin: 0 auto 15px auto; /* Центрирование и отступ */
+}
+
+
+
+/* Стили при наведении */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
